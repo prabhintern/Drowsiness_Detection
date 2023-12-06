@@ -9,4 +9,4 @@ Things to Keep in Mind:
 3) Detect Objects from Pre-Recorded Videos
 4) Detect Objects in Real Time Using OpenCV
 5) Fine Tuning a Drowsiness Model using YOLOv5 PyTorch
-6) Perform Real Time Drowsiness Detection
+6) Perform Real Time Drowsiness Detection.

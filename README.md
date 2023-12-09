@@ -7,11 +7,3 @@ Implementation is for people who feel drowsy when driving which can lead to acci
 
 -->What is PyTorch ?
 PyTorch is an open source machine learning (ML) framework based on the Python programming language and the Torch library. Torch is an open source ML library used for creating deep neural networks and is written in the Lua scripting language. It's one of the preferred platforms for deep learning research. The framework is built to speed up the process between research prototyping and deployment.
-
-Things to Keep in Mind:
-1) Install ultralytics YOLOv5
-2) Detect Objects from Images
-3) Detect Objects from Pre-Recorded Videos
-4) Detect Objects in Real Time Using OpenCV
-5) Fine Tuning a Drowsiness Model using YOLOv5 PyTorch
-6) Perform Real Time Drowsiness Detection.

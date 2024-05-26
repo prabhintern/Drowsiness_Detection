@@ -1,9 +1,37 @@
-# Deep_Drowsiness_Detection
-Implementation is for people who feel drowsy when driving which can lead to accidents.
+# Drowsiness_Detection
+(Prototype Implementation) is for people who feel drowsy when driving which can lead to accidents.
 
--->You Only Look Once (YOLO) ?
--->You Only Look Once (YOLO) is one of the most popular model architectures and object detection algorithms. It uses one of the best neural network architectures to produce high accuracy and overall processing 
-   speed, which is the main reason for its popularity. If we search Google for object detection algorithms, the first result will be related to the YOLO model.
 
--->What is PyTorch ?
-PyTorch is an open source machine learning (ML) framework based on the Python programming language and the Torch library. Torch is an open source ML library used for creating deep neural networks and is written in the Lua scripting language. It's one of the preferred platforms for deep learning research. The framework is built to speed up the process between research prototyping and deployment.
+Creating a drowsiness detection system using OpenCV, dlib, scipy.spatial, imutils, and pygame involves a series of detailed steps. The following outlines the methodology and implementation required to develop such a system effectively:
+
+Overview
+This system utilizes the in-built camera to monitor the user's eye movements and determine drowsiness by calculating the Euclidean distance between specific eye landmarks. If drowsiness is detected, an alert sound is played to wake the user.
+
+Components and Workflow
+Library Importation and Initialization:
+
+Import the necessary libraries including OpenCV, dlib, pygame, scipy.spatial, and imutils.
+Load dlib’s pre-trained facial landmark detector.
+Initialize the video stream to capture live video from the in-built camera.
+Facial Landmark Detection:
+
+Detect faces within the video stream using dlib.
+Extract the facial landmarks focusing particularly on the eyes.
+Eye Aspect Ratio (EAR) Calculation:
+
+Compute the Euclidean distances between vertical eye landmarks and horizontal eye landmarks.
+The EAR is used to determine whether the eyes are closed or open.
+Drowsiness Detection Algorithm:
+
+If the EAR falls below a pre-defined threshold for a specified number of consecutive frames, the user is considered to be drowsy.
+An alert sound is played using pygame to notify the user.
+Real-time Video Processing:
+
+Continuously process the video frames to monitor and detect drowsiness in real-time.
+
+
+//Sample Photo//
+
+![image](https://github.com/prabhintern/Drowsiness_Detection/assets/141141575/1d4a0efb-fb26-4ae4-84b5-bafc08b90905)
+
+
